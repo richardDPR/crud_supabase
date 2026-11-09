@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Supabase</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <h1>CRUD Clientes - Supabase</h1>
+
+    <form id="formCliente">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Correo">
+
+        <button type="submit">
+            Guardar
+        </button>
+
+    </form>
+
+    <hr>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaClientes">
+        </tbody>
+
+    </table>
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
